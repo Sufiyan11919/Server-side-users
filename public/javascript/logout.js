@@ -11,4 +11,5 @@ async function logout() {
     }
   }
   
+  
   document.querySelector('.btn-no-style').addEventListener('click', logout);

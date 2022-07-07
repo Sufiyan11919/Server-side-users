@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <title>NIKE</title>
+</head>
+
+<body>
+    <!-- ========================== LOGO LOAD IN =============================================== -->
+    <div class="flash-logo">
+        <div class="fade-in">
+            <img src="css/brands_logo/nike/fade-in-nike.jpg" alt="" id="flash-img">
+        </div>
+        <script>
+                const flashLogo = document.querySelector('.flash-logo');
+
+                    // event listener for fade in
+                    document.addEventListener('DOMContentLoaded', () => {
+                        setInterval(() => {
+                            flashLogo.classList.add('display-none')
+                        }, 2650)
+                    })
+            </script>
+    </div>
+
+    <!-- ========================== NAVBAR ========================================================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid justify-content-center align-items-center">
+                <div class="row modal-body justify-content-center align-items-center">
+                    <div class="row-md-3 ml-48  m-5" id="square1">
+                        <button type="button" class="btn btn-lg btn-outline-dark"> SHOP </button>
+                    </div>
+    
+                    <div class="row-md-3 ml-48 justify-content-center m-5" id="square2">
+                        <button type="button" class="btn btn-lg btn-outline-dark"> DROP </button>
+                    </div>
+    
+                    <div class="row-md-3 ml-48 justify-content-around m-5" id="square3">
+                        <button type="button" class="btn btn-lg btn-outline-dark"> BLOG </button>
+                    </div>
+    
+                    <div class="row-md-3 ml-48 justify-content-around m-5" id="square">
+                        <button type="button" class="btn btn-lg btn-outline-dark"> LOG </button>
+                    </div>
+    
+                </div>
+        </nav>
+   
+    </header>
+
+<!-- --------------------SLIDESHOW------------------------ -->
+            <section class="container-fluid bg-dark d-flex justify-content-center p-2" id="slideshow-container">
+                <div class="row" id="slideshow-box">
+                    <div class="col-12">
+                        <div class="slideshow bg-dark">
+                            <ul class="slideshow-content" id="marq-img">
+                                <li><img src="css/brands_logo/nike/nike-slide-img-1.png" alt="" id="marq-img"></li>
+                                <li>SHOP</li>
+                                <li><img src="css/brands_logo/nike/fade-in-nike1.jpg" alt="" id="marq-img"></li>
+                                <li>SHOP NIKE</li>
+                                <li><img src="css/brands_logo/nike/nike-slide-img-1.png" alt="" id="marq-img"></li>
+                                <li>NIKE</li>
+                                <li><img src="css/brands_logo/nike/fade-in-nike1.jpg" alt="" id="marq-img"></li>
+                                <li>SHOP NIKE</li>
+                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+     
+<!-- --------------------MAINE SECTION------------------------------- -->
+<section class="container-fluid bg-dark d-flex p-2" id="homepage">
+    <div class="row" id="item-box">
+        <div class="col-lg-4" id="item-card">
+            <img src="images/nike1.png" alt="" id="item-img">
+            <h3 class="text-center" id="item-name">SHOE NAME</h3>
+            <p class="text-center" id="item-info">SHOE INFO</p>
+        </div>
+        <div class="col-lg-4" id="item-card">
+            <img src="images/nike2.png" alt="" id="item-img">
+            <h3 class="text-center" id="item-name">SHOE NAME</h3>
+            <p class="text-center" id="item-info">SHOE INFO</p>
+        </div>
+        <div class="col-lg-4" id="item-card">
+            <img src="images/nike3.png" alt="" id="item-img">
+            <h3 class="text-center" id="item-name">SHOE NAME</h3>
+            <p class="text-center" id="item-info">SHOE INFO</p>
+        </div>
+        <div class="col-lg-4" id="item-card">
+            <img src="images/nike4.png" alt="" id="item-img">
+            <h3 class="text-center" id="item-name">SHOE NAME</h3>
+            <p class="text-center" id="item-info">SHOE INFO</p>
+        </div>
+        <div class="col-lg-4" id="item-card">
+            <img src="images/nike5.png" alt="" id="item-img">
+            <h3 class="text-center" id="item-name">SHOE NAME</h3>
+            <p class="text-center" id="item-info">SHOE INFO</p>
+        </div>
+    </div>
+ 
+</section>
+<!-- ----------------------FOOTER? ------------------------------------------ -->
+
+<section class="footer card-group d-flex">
+    <div class="row-2-lg">
+        <div class="col-1 container p-3 "></div>
+    </div>
+    </section>
+
+    <!-- *****************************************brands***************************************  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

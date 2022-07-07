@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------NAV BAR------------------- */
+.navbar{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #385a8d;
+    width: auto;
+    height: 200px;
+    border: 3px solid rgb(22, 20, 20);
+    align-items: center;
+}
+#square1{
+    border-style: solid;
+    border: 4px;
+    border-color: black;
+    display: flex;
+    fill: rgba(67, 78, 80, 0.3);
+}
+
+/* -------------MAIN CONTENT--------------------- */
+#homepage{
+    margin-top: 0;
+    width: 100%;
+    height: 150vh;
+    /* clip-path: polygon(100% 0%, 100% 88%, 50% 100%, 0% 88%, 0% 0%); */
+    background-size: 100% 100%;
+    
+}
+#item-box{
+    margin-top: 15;
+    margin-bottom: 10;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-around;
+}
+#item-name,
+#item-info{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #385a8d;
+}
+#item-name{
+    margin-top: 4px;
+}
+#item-info{
+    font-size: 16pt;
+}
+#item-card{
+    margin: 12px;
+}
+/* -------------- ITEM ANIMATION -------------------- */
+#item-card:hover{
+    animation: bounce 1.05s;
+    color: rgb(236, 243, 247);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(24, 24, 71), 0 0 5px rgb(7, 7, 54);
+}
+@keyframes bounce {
+    0%, 10%, 60%, 100%{
+        -webkit-transform: translateX(1);
+        transform: translateY(1);
+    } 
+    10%{
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    60%{
+        -webkit-transform: translateY(-5);
+        transform: translateY(-5);
+    }
+}
+#item-img{
+    width: 22vw;
+    height: 29vh;
+    scale: 100%;
+    object-fit: cover;
+}
+
+/* ---------------- SLIDESHOW ANIMATION ---------------------- */
+#slideshow-container{
+    margin-top: 17vh;
+    margin-bottom: 0;
+
+} 
+#slideshow-box{
+    left: auto;
+    right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow{
+    width: 98%;
+    height: 13vw;
+    background-color: #111;
+    color: rgb(245, 236, 235);
+    overflow: hidden;
+    
+}
+.slideshow-content::before,
+.slideshow-content::after{
+    position: absolute;
+
+    width: 12rem;
+    height: 100%;
+    content: "";
+    z-index: 0;
+}
+/* .slideshow-content::after{
+    left: 0;
+    background: linear-gradient(to right, #444 0%, transparent 100%);
+}
+.slideshow-content::before{
+    right: 0;
+    background: linear-gradient(to left, #444 0%, transparent 100%);
+
+} */
+.slideshow-content{
+    list-style: none;
+    height: 100%;
+    width: auto;
+    display: flex;
+    animation: scrolling 22s linear infinite;
+
+}
+@keyframes scrolling {
+    0% { transform: translateX(155vw); }
+    100% { transform: translateX(-200vw); }
+}
+
+.slideshow-content li{
+    background-color: black;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+    margin-left: 20;
+    height: auto;
+    flex-shrink: 0;
+    font-size: 4rem;
+    white-space: nowrap;
+} 
+#slideshow-img{
+    width: 22vw;
+    height: auto;
+}
+#nike-img{
+    width: 32vw;
+    height: 20vw;
+}
+/* ----------------- fade in --------------------------------- */
+.flash-logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 200;
+    color: aliceblue;
+    text-align: center;
+    line-height: 90vh;
+    }
+    .flash-logo img{
+        height: 25vh;
+        margin-top: 20%;
+    }
+    .flash-logo.display-none{
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        z-index: -10;
+        color: aliceblue;
+        text-align: center;
+        list-style: 90vh;
+        transition: all 0.5;
+    }
+    @keyframes fadeIn {
+        to{
+            opacity: 1;
+        }
+    }
+    .fade-in{
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+    
